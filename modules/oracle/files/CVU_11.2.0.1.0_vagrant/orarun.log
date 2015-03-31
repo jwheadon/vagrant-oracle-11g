@@ -1,5 +1,5 @@
 This is the log file for orarun script
-Timestamp: 092813141012
+Timestamp: 030815230156
 Response file being used is :/vagrant/modules/oracle/files/CVU_11.2.0.1.0_vagrant/fixup.response
 Enable file being used is :/vagrant/modules/oracle/files/CVU_11.2.0.1.0_vagrant/fixup.enable
 Setting Shell limits ...

@@ -15,12 +15,12 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id,
-                  "--name", "oradb",
+                  "--name", "oracle11g",
                   "--memory", "2048",
                   "--natdnshostresolver1", "on"]
   end
 
-  config.vm.provision :shell, :inline => "sudo rm /etc/localtime && sudo ln -s /usr/share/zoneinfo/US/Eastern /etc/localtime"
+  config.vm.provision :shell, :inline => "sudo rm /etc/localtime && sudo ln -s /usr/share/zoneinfo/Australia/Melbourne /etc/localtime"
 
   config.vm.provision :shell, :inline => "sudo yum install puppet -y"
 
